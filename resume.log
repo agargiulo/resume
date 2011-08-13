@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2011.3.30)  13 AUG 2011 13:32
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2011.3.30)  13 AUG 2011 13:34
 entering extended mode
  %&-line parsing enabled.
 **resume.tex
@@ -45,8 +45,7 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 (/usr/share/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-))
-No file resume.aux.
+)) (./resume.aux)
 \openout1 = `resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
@@ -101,6 +100,7 @@ driver: pdftex
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 93.
+
 (/usr/share/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
@@ -129,8 +129,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {//var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./resume.aux) ) 
 Here is how much of TeX's memory you used:
- 913 strings out of 495069
- 10637 string characters out of 1183033
+ 915 strings out of 495069
+ 10659 string characters out of 1183033
  60886 words of memory out of 3000000
  4133 multiletter control sequences out of 10000+50000
  29313 words of font info for 43 fonts, out of 3000000 for 5000
@@ -142,7 +142,7 @@ c/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></
 usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist
 /fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/pal
 atino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on resume.pdf (1 page, 67812 bytes).
+Output written on resume.pdf (1 page, 67586 bytes).
 PDF statistics:
  32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
