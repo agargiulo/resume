@@ -1,0 +1,165 @@
+% Anthony Gargiulo's Resume
+% Based on the template by 
+% Andrew McNabb
+% Created: Fri Aug 12 11:11:56 EDT 2011
+% Last Modified: Fri Aug 12 11:12:06 EDT 2011
+
+\documentclass[11pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+% Name and contact information
+\newcommand{\name}{Anthony Gargiulo}
+\newcommand{\addr}{20 Kunen Ave, Bethpage, NY 11714}
+\newcommand{\phone}{(515) 236-5102}
+\newcommand{\email}{agargiulo@anthonygargiulo.info}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands and environments
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+	\begin{center}\fontfamily{phv}\selectfont\Huge\scshape#1\end{center}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+	\vspace{4pt}
+	{\fontfamily{phv}\selectfont\Large#1}
+	\begin{itemize}
+	\vspace{3pt}
+}{
+	\end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+	\vspace{-4pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+	\vspace{-1pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+	\vspace{-5pt}
+	\item
+	\textbf{#1}---#2 \\
+	\textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+	\resbigitem{#1}{#2}{#3}
+	\vspace{-2pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+	\resitem{\textbf{#1}}
+	\vspace{-5pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now for the actual document:
+
+\begin{document}
+
+\fontfamily{ppl} \selectfont
+
+% Name with horizontal rule
+\bigname{\name}
+
+\vspace{-8pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
+
+\vspace{8 pt}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Education}
+
+	\begin{ressubsec}{Rochester Institute of Technology}{Rochester, NY}{Majoring in Computer Science}
+		\ressubitem{Projected Graduation Date: May, 2015}
+	\end{ressubsec}
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Experience}
+
+	\begin{ressubsec}{IKEA Long Island}{Hicksville, NY}{Cashier: December 2009--August 2010, June 2011--August 2019d}
+		\ressubitem{Worked as a cashier, and other positions when that department was short on people.}
+	\end{ressubsec}
+
+	\begin{ressubsec}{Bethpage School District}{Bethpage, NY}{Teacher's Assistant: July 2009}
+		\ressubitem{Assited teacher with normal classroom duties, and helped with the lessons.}
+		\ressubitem{Class was a video game design style class, aimed at middle school ages, and involved the use of MIT Scratch, and Game Maker.}
+	\end{ressubsec}
+
+	\begin{ressubsec}{Bethpage School District}{Bethpage, NY}{Summer Camp Teacher: 2011}
+		\ressubitem{Tought 4th to 7th grade students in a "Video Game Design" class for a summer tech camp.}
+		\ressubitem{Involved making lesson plans, and teaching topics ranging from simple flow control to variable use, etc...}
+		\ressubitem{Class was tought using a spin of MIT Scratch, named BYOB (Build Your Own Blocks)}}
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Skills}
+
+	\resitem{\textbf{Operating Systems:} Linux (Fedora, Debian, some Gentoo), Windows XP/7}
+
+	\begin{reslist}{Computer Languages:}
+
+		\ressubitem{Proficient in Java, Python, Perl}
+
+		\ressubitem{Familiar with HTML, \LaTeX, SQL, PHP, UNIX Shells}
+
+	\end{reslist}
+
+	\begin{reslist}{Tools and Systems:}
+
+		\ressubitem{Proficient in Apache, vim, Subversion, Git}
+
+		\ressubitem{Familiar with MySQL, PostgreSQL, OpenLDAP, Samba}
+
+	\end{reslist}
+
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}
