@@ -7,6 +7,8 @@
 \documentclass[11pt,oneside]{article}
 \usepackage{geometry}
 \usepackage[T1]{fontenc}
+\usepackage{pst-barcode}
+\usepackage{auto-pst-pdf}
 
 \pagestyle{empty}
 \geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
@@ -158,7 +160,12 @@
 
 
 \end{ressection}
-
+\centering 
+\textbf{"Digital copy:"}
+\newline
+\begin{pspicture}(1in,1in)
+		\psbarcode{"https://www.csh.rit.edu/~agargiulo/resume.pdf"}{eclevel=M width=1.0 height=1.0}{qrcode}
+\end{pspicture}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 
