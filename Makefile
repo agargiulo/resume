@@ -5,7 +5,7 @@ stage: resume stage_upload
 all:resume upload
 
 upload:stage
-	ssh www.anthonygargiulo.info 'cp -rv /var/www/html/resume/ /var/www/resume/'
+	ssh www.anthonygargiulo.info 'cp -rv /var/www/html/resume/* /var/www/resume/'
 
 html: resume.tex
 	pygmentize -f html -O full,style=colorful,linenos=1 -l latex -o resume.tex.html resume.tex
