@@ -1,3 +1,5 @@
+FILES = resume.pdf resume.tex resume.tex.html resume-pics.pdf
+
 stage: resume stage_upload
 
 all:resume upload
@@ -12,7 +14,4 @@ resume:
 	pdflatex -shell-escape resume.tex
 
 stage_upload:resume.pdf html
-	scp resume.pdf agargiulo@www.anthonygargiulo.info:/var/www/html/resume/resume.pdf
-	scp resume.tex agargiulo@www.anthonygargiulo.info:/var/www/html/resume/resume.tex
-	scp resume.tex.html agargiulo@www.anthonygargiulo.info:/var/www/html/resume/resume.tex.html
-	scp resume-pics.pdf agargiulo@www.anthonygargiulo.info:/var/www/html/resume/resume-pics.pdf
+	scp $(FILES) agargiulo@www.anthonygargiulo.info:/var/www/html/resume/

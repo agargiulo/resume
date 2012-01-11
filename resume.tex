@@ -11,7 +11,7 @@
 \usepackage{auto-pst-pdf}
 
 \pagestyle{empty}
-\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+\geometry{letterpaper,tmargin=0.75in,bmargin=0.75in,lmargin=0.75in,rmargin=0.75in,headheight=0in,headsep=0in,footskip=.3in}
 
 \setlength{\parindent}{0in}
 \setlength{\parskip}{0in}
@@ -37,17 +37,17 @@
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
-	\vspace{4pt}
+	\vspace{3pt}
 	{\fontfamily{phv}\selectfont\Large#1}
 	\begin{itemize}
-	\vspace{3pt}
+	\vspace{2pt}
 }{
 	\end{itemize}
 }
 
 % A resitem is a simple list element in a ressection (first level)
 \newcommand{\resitem}[1]{
-	\vspace{-4pt}
+	\vspace{-3pt}
 	\item \begin{flushleft} #1 \end{flushleft}
 }
 
@@ -62,7 +62,7 @@
 %  Arg 2: Location
 %  Arg 3: Title and/or date range
 \newcommand{\resbigitem}[3]{
-	\vspace{-5pt}
+	\vspace{-4pt}
 	\item
 	\textbf{#1}---#2 \\
 	\textit{#3}
@@ -71,7 +71,7 @@
 % This is a list that comes with a resbigitem
 \newenvironment{ressubsec}[3]{
 	\resbigitem{#1}{#2}{#3}
-	\vspace{-2pt}
+	\vspace{-1pt}
 	\begin{itemize}
 }{
 	\end{itemize}
@@ -80,7 +80,7 @@
 % This is a simple sublist
 \newenvironment{reslist}[1]{
 	\resitem{\textbf{#1}}
-	\vspace{-5pt}
+	\vspace{-4pt}
 	\begin{itemize}
 }{
 	\end{itemize}
@@ -98,11 +98,11 @@
 % Name with horizontal rule
 \bigname{\name}
 
-\vspace{-8pt} \rule{\textwidth}{1pt}
+\vspace{-7pt} \rule{\textwidth}{1pt}
 
 \vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
 
-\vspace{8 pt}
+\vspace{7 pt}
 
 
 
@@ -120,7 +120,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Experience}
 
-	\begin{ressubsec}{Bethpage School District}{Bethpage, NY}{Summer Camp Teacher: 2011}
+	\begin{ressubsec}{Computer Science House}{Rochester, NY}{System Administrator: September 2011-present}
+		\ressubitem{Responsible for the maintenance of services for the organization. Services include mail, kerberos, news, web, shell access }
+	\end{ressubsec}
+	\begin{ressubsec}{Rochester Institute of Technology IGM Department}{Rochester, NY}{System Administrator for Center for Student Innovation: October 2011-present}
+		\ressubitem{Responsible for the keeping the various technical items in the Center in a working state}
+		\ressubitem{}
+	\end{ressubsec}
+	\begin{ressubsec}{Bethpage School District}{Bethpage, NY}{Summer Camp Teacher: July 2011}
 		\ressubitem{Taught 4th to 7th grade students in a "Video Game Design" class for a summer tech camp.}
 		\ressubitem{Involved making lesson plans, and teaching topics ranging from simple flow control to variable use}
 		\ressubitem{Class was taught using a spin of MIT Scratch named BYOB (Build Your Own Blocks)}
@@ -163,8 +170,8 @@
 \end{ressection}
 \textbf{Digital copy:}
 \newline
-\begin{pspicture}(1in,1in)
-		\psbarcode{http://resume.anthonygargiulo.info}{eclevel=H width=1.0 height=1.0}{qrcode}
+\begin{pspicture}(0.75in,0.75in)
+		\psbarcode{http://resume.anthonygargiulo.info}{eclevel=H width=0.75 height=0.75}{qrcode}
 \end{pspicture}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
