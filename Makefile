@@ -10,7 +10,7 @@ upload:stage
 html: resume.tex
 	pygmentize -f html -O full,style=colorful,linenos=1 -l latex -o resume.tex.html resume.tex
 
-resume:
+resume:resume.tex
 	pdflatex -shell-escape resume.tex
 
 stage_upload:resume.pdf html
