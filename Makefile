@@ -1,4 +1,4 @@
-FILES = resume.pdf resume.tex resume.tex.html resume-pics.pdf
+FILES = resume.pdf resume.tex resume.tex.html #resume-pics.pdf
 
 stage: resume stage_upload
 
