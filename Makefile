@@ -11,7 +11,7 @@ html: resume.tex
 	pygmentize -f html -O full,style=colorful,linenos=1 -l latex -o resume.tex.html resume.tex
 
 resume:resume.tex
-	pdflatex -shell-escape resume.tex
+	pdflatex resume.tex
 
 stage_upload:resume.pdf html
 	scp -4 $(FILES) agargiulo@www.agargiulo.com:/var/www/html/resume/
