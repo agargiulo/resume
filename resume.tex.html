@@ -247,21 +247,28 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 168
 169
 170
-171</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">% Anthony Gargiulo&#39;s Resume</span>
+171
+172
+173
+174
+175
+176
+177
+178</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">% Anthony Gargiulo&#39;s Resume</span>
 <span class="c">% Based on the template by </span>
 <span class="c">% Andrew McNabb</span>
 <span class="c">% Created: Fri Aug 12 11:11:56 EDT 2011</span>
 <span class="c">% Last Modified: Fri Aug 12 11:12:06 EDT 2011</span>
 
-<span class="k">\documentclass</span><span class="na">[11pt,oneside]</span><span class="nb">{</span>article<span class="nb">}</span>
+<span class="k">\documentclass</span><span class="na">[10pt,oneside]</span><span class="nb">{</span>article<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="nb">{</span>geometry<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="na">[T1]</span><span class="nb">{</span>fontenc<span class="nb">}</span>
-<span class="k">\usepackage</span><span class="nb">{</span>pst-barcode<span class="nb">}</span>
-<span class="k">\usepackage</span><span class="nb">{</span>auto-pst-pdf<span class="nb">}</span>
+<span class="c">%\usepackage{pst-barcode}</span>
+<span class="c">%\usepackage{auto-pst-pdf}</span>
 
 
 <span class="k">\pagestyle</span><span class="nb">{</span>empty<span class="nb">}</span>
-<span class="k">\geometry</span><span class="nb">{</span>letterpaper,tmargin=0.5in,bmargin=1.0in,lmargin=0.9in,rmargin=0.9in,headheight=0in,headsep=0in,footskip=.3in<span class="nb">}</span>
+<span class="k">\geometry</span><span class="nb">{</span>letterpaper,tmargin=0.5in,bmargin=0.5in,lmargin=0.4in,rmargin=0.4in,headheight=0in,headsep=0in,footskip=.1in<span class="nb">}</span>
 
 <span class="k">\setlength</span><span class="nb">{</span><span class="k">\parindent</span><span class="nb">}{</span>0in<span class="nb">}</span>
 <span class="k">\setlength</span><span class="nb">{</span><span class="k">\parskip</span><span class="nb">}{</span>0in<span class="nb">}</span>
@@ -283,13 +290,13 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 
 <span class="c">% This defines how the name looks</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bigname</span><span class="nb">}</span>[1]<span class="nb">{</span>
-	<span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span><span class="k">\fontfamily</span><span class="nb">{</span>phv<span class="nb">}</span><span class="k">\selectfont\Huge\scshape</span>#1<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span><span class="k">\fontfamily</span><span class="nb">{</span>ppl<span class="nb">}</span><span class="k">\selectfont\Huge\scshape</span>#1<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
 <span class="nb">}</span>
 
 <span class="c">% A ressection is a main section (&lt;H1&gt;Section&lt;/H1&gt;)</span>
 <span class="k">\newenvironment</span><span class="nb">{</span>ressection<span class="nb">}</span>[1]<span class="nb">{</span>
 	<span class="k">\vspace</span><span class="nb">{</span>3pt<span class="nb">}</span>
-	<span class="nb">{</span><span class="k">\fontfamily</span><span class="nb">{</span>phv<span class="nb">}</span><span class="k">\selectfont\Large</span>#1<span class="nb">}</span>
+	<span class="nb">{</span><span class="k">\fontfamily</span><span class="nb">{</span>ppl<span class="nb">}</span><span class="k">\selectfont\Large</span>#1<span class="nb">}</span>
 	<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
 	<span class="k">\vspace</span><span class="nb">{</span>2pt<span class="nb">}</span>
 <span class="nb">}{</span>
@@ -298,7 +305,7 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 
 <span class="c">% A resitem is a simple list element in a ressection (first level)</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\resitem</span><span class="nb">}</span>[1]<span class="nb">{</span>
-	<span class="k">\vspace</span><span class="nb">{</span>-3pt<span class="nb">}</span>
+	<span class="k">\vspace</span><span class="nb">{</span>-2pt<span class="nb">}</span>
 	<span class="k">\item</span> <span class="k">\begin</span><span class="nb">{</span>flushleft<span class="nb">}</span> #1 <span class="k">\end</span><span class="nb">{</span>flushleft<span class="nb">}</span>
 <span class="nb">}</span>
 
@@ -313,7 +320,7 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">%  Arg 2: Location</span>
 <span class="c">%  Arg 3: Title and/or date range</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\resbigitem</span><span class="nb">}</span>[3]<span class="nb">{</span>
-	<span class="k">\vspace</span><span class="nb">{</span>-4pt<span class="nb">}</span>
+	<span class="k">\vspace</span><span class="nb">{</span>-3pt<span class="nb">}</span>
 	<span class="k">\item</span>
 	<span class="k">\textbf</span><span class="nb">{</span>#1<span class="nb">}</span>---#2 <span class="k">\\</span>
 	<span class="k">\textit</span><span class="nb">{</span>#3<span class="nb">}</span>
@@ -331,7 +338,7 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">% This is a simple sublist</span>
 <span class="k">\newenvironment</span><span class="nb">{</span>reslist<span class="nb">}</span>[1]<span class="nb">{</span>
 	<span class="k">\resitem</span><span class="nb">{</span><span class="k">\textbf</span><span class="nb">{</span>#1<span class="nb">}}</span>
-	<span class="k">\vspace</span><span class="nb">{</span>-4pt<span class="nb">}</span>
+	<span class="k">\vspace</span><span class="nb">{</span>-3pt<span class="nb">}</span>
 	<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
 <span class="nb">}{</span>
 	<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
@@ -351,26 +358,32 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 
 <span class="k">\vspace</span><span class="nb">{</span>-4pt<span class="nb">}</span> <span class="k">\rule</span><span class="nb">{</span><span class="k">\textwidth</span><span class="nb">}{</span>1pt<span class="nb">}</span>
 
-<span class="k">\vspace</span><span class="nb">{</span>-1pt<span class="nb">}</span> <span class="nb">{</span><span class="k">\small\itshape</span> <span class="k">\addr</span> <span class="k">\hfill</span> <span class="k">\phone</span>; <span class="k">\email</span> <span class="k">\hfill</span> <span class="k">\github</span><span class="nb">}</span>
+<span class="k">\vspace</span><span class="nb">{</span>-1pt<span class="nb">}</span> <span class="nb">{</span><span class="k">\small\itshape</span> <span class="k">\addr</span> <span class="k">\hfill</span> <span class="k">\phone</span> <span class="k">\hfill</span> <span class="k">\email</span> <span class="k">\hfill</span> <span class="k">\github</span><span class="nb">}</span>
 
-<span class="k">\vspace</span><span class="nb">{</span>30 pt<span class="nb">}</span>
+<span class="k">\vspace</span><span class="nb">{</span>15 pt<span class="nb">}</span>
 
 
 
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Objective<span class="nb">}</span>
+
+	<span class="k">\ressubitem</span><span class="nb">{</span>Seeking cooperative employment in the field of computer science. Available summer 2013.<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Experience<span class="nb">}</span>
 
-	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Computer Science House<span class="nb">}{</span>Rochester, NY<span class="nb">}{</span>System Administrator: September 2011-present<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Computer Science House<span class="nb">}{</span>Rochester, NY<span class="k">\hfill</span> September 2011--present<span class="nb">}{</span>System Administrator<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Responsible for the maintenance of services for the organization<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Services include mail, kerberos, news, web, and shell access<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Services include mail, Kerberos, news, web, and shell access<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
-	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>IKEA Long Island<span class="nb">}{</span>Hicksville, NY<span class="nb">}{</span>Cashier: December 2009--August 2010, June 2011--August 2011, April 2012--August 2012<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>IKEA Long Island<span class="nb">}{</span>Hicksville, NY <span class="k">\hfill</span> December 2009--August 2010, June--August 2011, April--August 2012<span class="nb">}{</span>Cashier<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Worked as a cashier and other positions as assigned<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
-	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Rochester Institute of Technology IGM Department<span class="nb">}{</span>Rochester, NY<span class="nb">}{</span>System Administrator for Center for Student Innovation: October 2011-February 2012<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Rochester Institute of Technology IGM Department<span class="nb">}{</span>Rochester, NY <span class="k">\hfill</span> October 2011-February 2012<span class="nb">}{</span>System Administrator for Center for Student Innovation<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Responsible for the keeping the various technical items in the Center up to date<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Setup and maintained several linux servers for FOSS@RIT<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
-	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Bethpage School District<span class="nb">}{</span>Bethpage, NY<span class="nb">}{</span>Summer Camp Teacher: July 2011<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Bethpage School District<span class="nb">}{</span>Bethpage, NY <span class="k">\hfill</span> July 2011<span class="nb">}{</span>Summer Camp Teacher<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Taught 4th to 7th grade students in a &quot;Video Game Design&quot; class for a summer tech camp<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Made lesson plans, and taught topics ranging from simple flow control to variable use<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Class was taught using a spin of MIT Scratch named BYOB (Build Your Own Blocks)<span class="nb">}</span>
@@ -382,35 +395,36 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Education<span class="nb">}</span>
 
-	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Rochester Institute of Technology<span class="nb">}{</span>Rochester, NY<span class="nb">}{</span>Bachelor of Science in Computer Science<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Projected Graduation Date: May, 2015<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>PFOS GPA: 3.33<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Rochester Institute of Technology<span class="nb">}{</span>Rochester, NY<span class="nb">}{</span>Bachelor of Science in Applied Arts and Science<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Expected Graduation Date: May, 2015<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
 
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
 
-
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Activities and Projects<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Computer Science House @ RIT<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Activley contribute to a Open Source Network Resource <span class="k">\&amp;</span> Access Manager<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Maintain a PXE Netboot server<span class="nb">}</span>
+	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
+	<span class="k">\resitem</span><span class="nb">{</span>RIT Pep Band<span class="nb">}</span>
+	<span class="k">\resitem</span><span class="nb">{</span>FOSS@RIT<span class="nb">}</span>
+	<span class="k">\resitem</span><span class="nb">{</span>FIRST Robotics Competition Volunteer<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Skills<span class="nb">}</span>
 
 	<span class="k">\resitem</span><span class="nb">{</span><span class="k">\textbf</span><span class="nb">{</span>Operating Systems:<span class="nb">}</span> Linux (Fedora, RHEL, Debian, Gentoo), Windows XP/7<span class="nb">}</span>
 
-	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Computer Languages:<span class="nb">}</span>
-
+	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Programming Languages:<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient in Java, Python<span class="nb">}</span>
-
-		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with Perl, HTML, SQL, PHP, Bash, ZSH<span class="nb">}</span>
-
+		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with Perl, HTML, SQL, PHP, Bash, MIPS, C++<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
 
-	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Tools and Systems:<span class="nb">}</span>
-
+	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Tools and Software:<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient in Apache, Vim, Subversion, Git<span class="nb">}</span>
-
 		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with DHCPd, Cisco IOS, MySQL, PostgreSQL, OpenLDAP, Samba<span class="nb">}</span>
-
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
-
 
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
 
