@@ -5,7 +5,7 @@ stage: resume stage_upload
 all:resume upload
 
 upload:stage
-	ssh -4 -oVisualHostKey=no www.agargiulo.com 'cp -rv /var/www/html/resume/* /var/www/resume/'
+	ssh -4 -oVisualHostKey=no www.agargiulo.com 'cp -r /var/www/html/resume/* /var/www/resume/'
 
 html: resume.tex
 	pygmentize -f html -O full,style=colorful,linenos=1 -l latex -o resume.tex.html resume.tex
