@@ -7,9 +7,6 @@
 \documentclass[10pt,oneside]{article}
 \usepackage{geometry}
 \usepackage[T1]{fontenc}
-%\usepackage{pst-barcode}
-%\usepackage{auto-pst-pdf}
-
 
 \pagestyle{empty}
 \geometry{letterpaper,tmargin=0.5in,bmargin=0.5in,lmargin=0.72in,rmargin=0.72in,headheight=0in,headsep=0in,footskip=.1in}
@@ -26,7 +23,8 @@
 \newcommand{\phone}{(585) 201-8391}
 \newcommand{\mobilePhone}{(516) 236-5102}
 \newcommand{\email}{anthony@agargiulo.com}
-\newcommand{\github}{http://github.com/agargiulo}
+\newcommand{\github}{https://github.com/agargiulo}
+\newcommand{\linkedin}{https://www.linkedin.com/in/amgargiulo}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,7 +100,7 @@
 
 \vspace{-4pt} \rule{\textwidth}{1pt}
 
-\vspace{-1pt} {\normalsize\itshape \addr \hfill \email \\ \phone \hfill \github}
+\vspace{-1pt} {\normalsize\itshape \addr \hfill \email \hfill \linkedin \\ \mobilePhone \hfill \github}
 
 \vspace{15 pt}
 
@@ -111,7 +109,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Objective}
 
-	\ressubitem{Seeking cooperative employment in the field of computer science. Available summer 2013.}
+	\ressubitem{Seeking cooperative employment in the field of computer science. Available summer 2014.}
 
 \end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,8 +131,8 @@
 	\end{reslist}
 
 	\begin{reslist}{Tools and Software:}
-		\ressubitem{Proficient with Android Platforms, Apache, Vim, Subversion, Git}
-		\ressubitem{Familiar with ISC-DHCPD, Cisco IOS, MySQL, PostgreSQL, OpenLDAP, Samba}
+		\ressubitem{Proficient with Android platforms, Apache, Vim, Subversion, Git, EC2, CloudWatch}
+		\ressubitem{Familiar with ISC-DHCPD, Cisco IOS, MySQL, PostgreSQL, OpenLDAP, Samba, SQS, RDS}
 		\ressubitem{Operating Systems: Linux (Fedora, RHEL, Debian, Gentoo), Windows XP/7}
 	\end{reslist}
 
@@ -143,16 +141,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Experience}
 
+	\begin{ressubsec}{Newstex, LLC}{Remote work\hfill May 2013 -- present}{Systems Engineer}
+		\ressubitem{Maintained a fleet of services and systems comprising Newstex's content syndication service}
+		\ressubitem{Worked with technologies such as Amazon's EC2, CloudWatch, SQS, and RDS}
+		\ressubitem{Made patches for parts of Newstex's production python code base}
+	\end{ressubsec}
 	\begin{ressubsec}{Computer Science House}{Rochester, NY\hfill September 2011 -- present}{System Administrator}
 		\ressubitem{Responsible for the maintenance of services for the organization}
 		\ressubitem{Services include mail, Kerberos, news, web, and shell access}
 	\end{ressubsec}
-	\begin{ressubsec}{IKEA Long Island}{Hicksville, NY \hfill December 2009 -- August 2010,  Summer 2011,  April -- August 2012}{Cashier}
-		\ressubitem{Worked as a cashier and other positions as assigned}
-	\end{ressubsec}
 	\begin{ressubsec}{Rochester Institute of Technology IGM Department}{Rochester, NY \hfill October 2011 -- February 2012}{System Administrator for Center for Student Innovation}
 		\ressubitem{Responsible for the keeping the various technical items in the Center up to date}
-		\ressubitem{Set up and maintained several linux servers for FOSS@RIT}
+		\ressubitem{Set up and maintained several Linux servers for FOSS@RIT}
 	\end{ressubsec}
 	\begin{ressubsec}{Bethpage School District}{Bethpage, NY \hfill July 2009,  July 2011}{Summer Camp Teacher}
 		\ressubitem{Taught 4th to 7th grade students in a "Video Game Design" class for a summer tech camp}
@@ -172,9 +172,10 @@
 		\ressubitem{Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD}
 	\end{reslist}
 	\resitem{RIT Pep Band \hfill 2010 -- Present}
-	\resitem{FIRST Robotics Competition Volunteer \hfill Spring 2012}
+	\resitem{FIRST Robotics Competition Volunteer \hfill Spring 2012, 2013}
 \end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \end{document}
+% vim: set spell tw=100 :
