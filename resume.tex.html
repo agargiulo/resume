@@ -257,7 +257,14 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 178
 179
 180
-181</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">% Anthony Gargiulo&#39;s Resume</span>
+181
+182
+183
+184
+185
+186
+187
+188</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">% Anthony Gargiulo&#39;s Resume</span>
 <span class="c">% Based on the template by </span>
 <span class="c">% Andrew McNabb</span>
 <span class="c">% Created: Fri Aug 12 11:11:56 EDT 2011</span>
@@ -278,7 +285,8 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 
 <span class="c">% Name and contact information</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\name</span><span class="nb">}{</span>Anthony Gargiulo<span class="nb">}</span>
-<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\addr</span><span class="nb">}{</span>20 Kunen Ave, Bethpage, NY 11714<span class="nb">}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\addr</span><span class="nb">}{</span>Permanent - 20 Kunen Ave, Bethpage, NY 11714<span class="nb">}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\schoolAddr</span><span class="nb">}{</span>School - 193 Colony Manor Dr, Rochester NY 14623<span class="nb">}</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\phone</span><span class="nb">}{</span>(585) 201-8391<span class="nb">}</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\mobilePhone</span><span class="nb">}{</span>(516) 236-5102<span class="nb">}</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\email</span><span class="nb">}{</span>anthony@agargiulo.com<span class="nb">}</span>
@@ -359,7 +367,7 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 
 <span class="k">\vspace</span><span class="nb">{</span>-4pt<span class="nb">}</span> <span class="k">\rule</span><span class="nb">{</span><span class="k">\textwidth</span><span class="nb">}{</span>1pt<span class="nb">}</span>
 
-<span class="k">\vspace</span><span class="nb">{</span>-1pt<span class="nb">}</span> <span class="nb">{</span><span class="k">\normalsize\itshape</span> <span class="k">\addr</span> <span class="k">\hfill</span> <span class="k">\email</span> <span class="k">\hfill</span> <span class="k">\linkedin</span> <span class="k">\\</span> <span class="k">\mobilePhone</span> <span class="k">\hfill</span> <span class="k">\github</span><span class="nb">}</span>
+<span class="k">\vspace</span><span class="nb">{</span>-1pt<span class="nb">}</span> <span class="nb">{</span><span class="k">\normalsize\itshape</span> <span class="k">\addr</span> <span class="k">\hfill</span> <span class="k">\schoolAddr</span> <span class="k">\\</span> <span class="k">\github</span> <span class="k">\hfill</span> <span class="k">\linkedin</span> <span class="k">\\</span> <span class="k">\email</span> <span class="k">\hfill</span> <span class="k">\mobilePhone</span><span class="nb">}</span>
 
 <span class="k">\vspace</span><span class="nb">{</span>15 pt<span class="nb">}</span>
 
@@ -368,17 +376,23 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Objective<span class="nb">}</span>
 
-	<span class="k">\ressubitem</span><span class="nb">{</span>Seeking cooperative employment in the field of computer science. Available summer 2014.<span class="nb">}</span>
+	<span class="k">\ressubitem</span><span class="nb">{</span>Seeking cooperative employment in the field of computer science. Available summer 2014, location agnostic.<span class="nb">}</span>
 
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
+
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Education<span class="nb">}</span>
 
 	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Rochester Institute of Technology<span class="nb">}{</span>Rochester, NY<span class="nb">}{</span>Bachelor of Science in Applied Arts and Science<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Expected Graduation Date: May 2015<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Concentrating in Computer Science and Network and Security Administration<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
 
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
 
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Skills<span class="nb">}</span>
@@ -390,12 +404,30 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
 
 	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Tools and Software:<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient with Android platforms, Apache, Vim, Subversion, Git, EC2, CloudWatch<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with ISC-DHCPD, Cisco IOS, MySQL, PostgreSQL, OpenLDAP, Samba, SQS, RDS<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient with Android platforms, Apache, Vim, Subversion, Git, Amazon EC2 <span class="k">\&amp;</span> CloudWatch<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with ISC-DHCPD, Cisco IOS, MySQL, PostgreSQL, OpenLDAP, Samba, Amazon SQS <span class="k">\&amp;</span> RDS<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Operating Systems: Linux (Fedora, RHEL, Debian, Gentoo), Windows XP/7<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
 
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
+
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Activities and Personal Projects<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Computer Science House @ RIT <span class="k">\hfill</span> 2010 -- Present<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Actively contribute to an open source network resource <span class="k">\&amp;</span> access manager <span class="k">\\</span>
+			<span class="k">\hspace</span><span class="nb">{</span>8pt<span class="nb">}</span> -- Wrote the main output script in PL/Perl <span class="k">\\</span> 
+			<span class="k">\hspace</span><span class="nb">{</span>8pt<span class="nb">}</span> -- http://grantcohoe.com/projects/starrs<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD <span class="k">\\</span>
+			<span class="k">\hspace</span><span class="nb">{</span>8pt<span class="nb">}</span> -- Allows users to install various Operating Systems without burning discs <span class="k">\\</span>
+			<span class="k">\hspace</span><span class="nb">{</span>8pt<span class="nb">}</span> -- https://github.com/ComputerScienceHouse/tftpboot<span class="nb">}</span>
+	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
+	<span class="k">\resitem</span><span class="nb">{</span>RIT Pep Band <span class="k">\hfill</span> 2010 -- Present<span class="nb">}</span>
+	<span class="k">\resitem</span><span class="nb">{</span>FIRST Robotics Competition Volunteer <span class="k">\hfill</span> Spring 2012, 2013<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
 
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Experience<span class="nb">}</span>
@@ -413,25 +445,7 @@ body .il { color: #0000D0; font-weight: bold } /* Literal.Number.Integer.Long */
 		<span class="k">\ressubitem</span><span class="nb">{</span>Responsible for the keeping the various technical items in the Center up to date<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Set up and maintained several Linux servers for FOSS@RIT<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
-	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Bethpage School District<span class="nb">}{</span>Bethpage, NY <span class="k">\hfill</span> July 2009,  July 2011<span class="nb">}{</span>Summer Camp Teacher<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Taught 4th to 7th grade students in a &quot;Video Game Design&quot; class for a summer tech camp<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Made lesson plans, and taught topics ranging from simple flow control to variable use<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Class was taught using a spin of MIT Scratch named BYOB (Build Your Own Blocks)<span class="nb">}</span>
-	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
 
-<span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
-
-
-<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
-<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Activities and Personal Projects<span class="nb">}</span>
-	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Computer Science House @ RIT <span class="k">\hfill</span> 2010 -- Present<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Actively contribute to an open source network resource <span class="k">\&amp;</span> access manager <span class="k">\\</span>
-			<span class="k">\hspace</span><span class="nb">{</span>8pt<span class="nb">}</span> -- Wrote the main output script in PL/Perl <span class="k">\\</span> 
-			<span class="k">\hspace</span><span class="nb">{</span>8pt<span class="nb">}</span> -- http://grantcohoe.com/projects/starrs<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD<span class="nb">}</span>
-	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
-	<span class="k">\resitem</span><span class="nb">{</span>RIT Pep Band <span class="k">\hfill</span> 2010 -- Present<span class="nb">}</span>
-	<span class="k">\resitem</span><span class="nb">{</span>FIRST Robotics Competition Volunteer <span class="k">\hfill</span> Spring 2012, 2013<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 
