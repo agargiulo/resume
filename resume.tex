@@ -9,7 +9,7 @@
 \usepackage[T1]{fontenc}
 
 \pagestyle{empty}
-\geometry{letterpaper,tmargin=0.5in,bmargin=0.5in,lmargin=0.72in,rmargin=0.72in,headheight=0in,headsep=0in,footskip=.1in}
+\geometry{letterpaper,tmargin=0.3in,bmargin=0.3in,lmargin=0.72in,rmargin=0.72in,headheight=0in,headsep=0in,footskip=.1in}
 
 \setlength{\parindent}{0in}
 \setlength{\parskip}{0in}
@@ -60,8 +60,8 @@
 
 % A resbigitem is a complex list element for stuff like jobs and education:
 %  Arg 1: Name of company or university
-%  Arg 2: Location
-%  Arg 3: Title and/or date range
+%  Arg 2: Location and/or date range
+%  Arg 3: Title
 \newcommand{\resbigitem}[3]{
 	\vspace{-3pt}
 	\item
@@ -69,6 +69,16 @@
 	\textit{#3}
 }
 
+% A resbigitem is a complex list element for stuff like projects
+%  Arg 1: Name of project
+%  Arg 2: Date
+%  Arg 3: Link or other info
+\newcommand{\resaltitem}[3]{
+	\vspace{-3pt}
+	\item
+	\textbf{#1} \hfill #2 \\
+	\textit{#3}
+}
 % This is a list that comes with a resbigitem
 \newenvironment{ressubsec}[3]{
 	\resbigitem{#1}{#2}{#3}
@@ -78,6 +88,14 @@
 	\end{itemize}
 }
 
+% This is a list that comes with a resaltitem
+\newenvironment{resaltsec}[3]{
+	\resaltitem{#1}{#2}{#3}
+	\vspace{-1pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
 % This is a simple sublist
 \newenvironment{reslist}[1]{
 	\resitem{\textbf{#1}}
