@@ -1,6 +1,6 @@
 FILES = resume.pdf resume.tex resume.tex.html #resume-pics.pdf
 
-stage: resume stage_upload
+stage: resume.pdf stage_upload
 
 all:resume upload
 
@@ -10,7 +10,7 @@ upload:stage
 html: resume.tex
 	pygmentize -f html -O full,style=colorful,linenos=1 -l latex -o resume.tex.html resume.tex
 
-resume:resume.tex
+resume.pdf: resume.tex
 	pdflatex resume.tex
 
 stage_upload:resume.pdf html
