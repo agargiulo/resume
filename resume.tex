@@ -2,14 +2,13 @@
 % Based on the template by 
 % Andrew McNabb
 % Created: Fri Aug 12 11:11:56 EDT 2011
-% Last Modified: Fri Aug 12 11:12:06 EDT 2011
 
 \documentclass[10pt,oneside]{article}
 \usepackage{geometry}
 \usepackage[T1]{fontenc}
 
 \pagestyle{empty}
-\geometry{letterpaper,tmargin=0.3in,bmargin=0.3in,lmargin=0.72in,rmargin=0.72in,headheight=0in,headsep=0in,footskip=.1in}
+\geometry{letterpaper,tmargin=0.3in,bmargin=0.3in,lmargin=0.65in,rmargin=0.65in,headheight=0in,headsep=0in,footskip=.1in}
 
 \setlength{\parindent}{0in}
 \setlength{\parskip}{0in}
@@ -19,8 +18,7 @@
 
 % Name and contact information
 \newcommand{\name}{Anthony Gargiulo}
-\newcommand{\addr}{Permanent - 20 Kunen Ave, Bethpage, NY 11714}
-\newcommand{\schoolAddr}{School - 193 Colony Manor Dr, Rochester NY 14623}
+\newcommand{\addr}{20 Kunen Ave, Bethpage, NY 11714}
 \newcommand{\phone}{(585) 201-8391}
 \newcommand{\mobilePhone}{(516) 236-5102}
 \newcommand{\email}{anthony@agargiulo.com}
@@ -119,18 +117,18 @@
 
 \vspace{-4pt} \rule{\textwidth}{1pt}
 
-\vspace{-1pt} {\normalsize\itshape \addr \hfill \mobilePhone \\ \schoolAddr \hfill \email \\ \github \hfill \linkedin}
+\vspace{-1pt} {\normalsize\itshape \addr \hfill \mobilePhone \\ \linkedin \hfill \github \\ \email}
 
 \vspace{15 pt}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-\begin{ressection}{Objective}
-
-	\ressubitem{Seeking cooperative employment in the field of computer science. Available summer 2014, location agnostic.}
-
-\end{ressection}
+%\begin{ressection}{Objective}
+%
+%	\ressubitem{Seeking full time employment in the field of computer science or system and network admin. Available winter 2014, location agnostic.}
+%
+%\end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -138,9 +136,8 @@
 \begin{ressection}{Education}
 
 	\begin{ressubsec}{Rochester Institute of Technology}{Rochester, NY}{Bachelor of Science in Applied Arts and Science}
-		\ressubitem{Expected Graduation Date: May 2015}
-		\ressubitem{Concentrating in Computer Science and Network and Security Administration}
-		\ressubitem{Courses: Systems Programming I/II, Intro to Routing and Switching, OS I, Data Comm \& Networking}
+		\ressubitem{Concentrating in Computer Science and Network and Systems Administration}
+		\ressubitem{Courses: Systems Programming I/II, Advanced Routing and Switching, OS I, Data Comm \& Networking}
 	\end{ressubsec}
 
 \end{ressection}
@@ -152,8 +149,8 @@
 
 
 	\begin{reslist}{Programming Languages:}
-		\ressubitem{Proficient in Java, Python, Perl, C/C++}
-		\ressubitem{Familiar with HTML, SQL, PHP, Bash, MIPS, x86 asm, \LaTeX}
+		\ressubitem{Proficient in Python, C/C++, Java, Perl}
+		\ressubitem{Familiar with SQL, PHP, Bash/ZSH, MIPS, x86 asm, \LaTeX}
 	\end{reslist}
 
 	\begin{reslist}{Tools and Software:}
@@ -174,12 +171,12 @@
 	%	\ressubitem{Worked with PL/Perl, PostgreSQL}
 	%\end{resaltsec}
 
-	\begin{resaltsec}{Android Gatekeeper App}{2012 - Present}{https://github.com/agargiulo/gatekeeper-android}
+	\begin{resaltsec}{Android Gatekeeper App}{2012 - 2014}{https://github.com/agargiulo/gatekeeper-android}
 		\ressubitem{Android Application to connect to CSH's Gatekeeper software}
-		\ressubitem{Allows CSHers to unlock certain specially equipped doors with their Android devices}
+		\ressubitem{Enables CSHers to unlock certain specially equipped doors with their Android devices}
 	\end{resaltsec}
 
-	\begin{resaltsec}{PXE Boot Server}{2010 - Present}{https://github.com/ComputerScienceHouse/tftpboot}
+	\begin{resaltsec}{PXE Boot Server}{2010 - 2014}{https://github.com/ComputerScienceHouse/tftpboot}
 		\ressubitem{Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD}
 		\ressubitem{Allows users to install various Operating Systems without burning discs}
 	\end{resaltsec}
@@ -191,18 +188,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Experience}
 
-	\begin{ressubsec}{Newstex, LLC}{Remote work\hfill May 2013 -- present}{Systems Engineer}
+    \begin{ressubsec}{Facebook}{Menlo Park, CA\hfill May 2014 -- August 2014}{Production Engineering Intern}
+        \ressubitem{Worked on Air Traffic Control, a system to shape traffic for testing applications in poor network conditions}
+        \ressubitem{Contributed to Facebook's \textbf{sparts}, an open source library to prototype services in python}
+    \end{ressubsec}
+	\begin{ressubsec}{Newstex, LLC}{Remote work\hfill May 2013 -- April 2014}{Systems Engineer}
 		\ressubitem{Maintained a fleet of services and systems comprising Newstex's content syndication service}
 		\ressubitem{Patched parts of Newstex's production python code base}
 	\end{ressubsec}
-	\begin{ressubsec}{Computer Science House}{Rochester, NY\hfill September 2011 -- present}{System Administrator}
-		\ressubitem{Responsible for the maintenance of services for the organization}
-		\ressubitem{Services include mail, Kerberos, news, web, and shell access}
+	\begin{ressubsec}{Computer Science House}{Rochester, NY\hfill September 2011 -- April 2014}{System Administrator}
+		\ressubitem{Maintained services including mail, Kerberos, news, web, and shell access for the organization}
+		\ressubitem{Configured routers and switches for the members' networks}
 	\end{ressubsec}
-	\begin{ressubsec}{Rochester Institute of Technology IGM Department}{Rochester, NY \hfill October 2011 -- February 2012}{System Administrator (Center for Student Innovation)}
-		\ressubitem{Responsible for the keeping the various technical items in the Center up to date}
-		\ressubitem{Set up and maintained several Linux servers for FOSS@RIT}
-	\end{ressubsec}
+	%\begin{ressubsec}{Rochester Institute of Technology IGM Department}{Rochester, NY \hfill October 2011 -- February 2012}{System Administrator (Center for Student Innovation)}
+	%	\ressubitem{Responsible for the keeping the various technical items in the Center up to date}
+	%	\ressubitem{Set up and maintained several Linux servers for FOSS@RIT}
+	%\end{ressubsec}
 
 \end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -211,9 +212,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Activities}
 
-	\resitem{Computer Science House @ Rochester Institute of Technology\hfill 2010 -- Present}
-	\resitem{RIT Pep Band (alto sax and clarinet) \hfill 2010 -- Present}
-	\resitem{FIRST Robotics Competition Volunteer \hfill Spring 2012, 2013}
+	\resitem{Computer Science House @ Rochester Institute of Technology\hfill 2010 -- May 2014}
+	\resitem{RIT Pep Band (alto sax and clarinet) \hfill 2010 -- May 2014}
+	\resitem{FIRST Robotics Competition Volunteer \hfill Spring 2012, 2013, 2014}
 
 \end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
