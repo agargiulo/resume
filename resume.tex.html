@@ -299,7 +299,11 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 220
 221
 222
-223</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">% Anthony Gargiulo&#39;s Resume</span>
+223
+224
+225
+226
+227</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">% Anthony Gargiulo&#39;s Resume</span>
 <span class="c">% Based on the template by </span>
 <span class="c">% Andrew McNabb</span>
 <span class="c">% Created: Fri Aug 12 11:11:56 EDT 2011</span>
@@ -309,7 +313,7 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="k">\usepackage</span><span class="na">[T1]</span><span class="nb">{</span>fontenc<span class="nb">}</span>
 
 <span class="k">\pagestyle</span><span class="nb">{</span>empty<span class="nb">}</span>
-<span class="k">\geometry</span><span class="nb">{</span>letterpaper,tmargin=0.3in,bmargin=0.3in,lmargin=0.65in,rmargin=0.65in,headheight=0in,headsep=0in,footskip=.1in<span class="nb">}</span>
+<span class="k">\geometry</span><span class="nb">{</span>letterpaper,tmargin=0.22in,bmargin=0.22in,lmargin=0.55in,rmargin=0.55in,headheight=0in,headsep=0in,footskip=.1in<span class="nb">}</span>
 
 <span class="k">\setlength</span><span class="nb">{</span><span class="k">\parindent</span><span class="nb">}{</span>0in<span class="nb">}</span>
 <span class="k">\setlength</span><span class="nb">{</span><span class="k">\parskip</span><span class="nb">}{</span>0in<span class="nb">}</span>
@@ -425,11 +429,11 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
 
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
-<span class="c">%\begin{ressection}{Objective}</span>
-<span class="c">%</span>
-<span class="c">%	\ressubitem{Seeking full time employment in the field of computer science or system and network admin. Available winter 2014, location agnostic.}</span>
-<span class="c">%</span>
-<span class="c">%\end{ressection}</span>
+<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Objective<span class="nb">}</span>
+
+	<span class="k">\ressubitem</span><span class="nb">{</span>Seeking full time employment in the field of computer science or system and network admin. Available Fall 2015<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 
 
@@ -450,13 +454,13 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
 
 	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Programming Languages:<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient in Python, C/C++, Java, Perl<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient in Ruby, Python, C/C++, Java, Perl<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with SQL, PHP, Bash/ZSH, MIPS, x86 asm, <span class="k">\LaTeX</span><span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
 
 	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Tools and Software:<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient with Android platforms, Apache, Vim, Subversion, Git, Amazon EC2 <span class="k">\&amp;</span> CloudWatch<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with ISC-DHCPD, Cisco IOS, MySQL, PostgreSQL, OpenLDAP, Samba, Amazon SQS <span class="k">\&amp;</span> RDS<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient with Android platforms, Vim, Git <span class="k">\&amp;</span> Guthub, Apache, Subversion, Amazon EC2 <span class="k">\&amp;</span> CloudWatch<span class="nb">}</span>
+    <span class="k">\ressubitem</span><span class="nb">{</span>Familiar with Vagrant, Jenkins/Travis CI, ISC-DHCPD, Cisco IOS, PostgreSQL, OpenLDAP, Puppet/Chef<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Operating Systems: Linux (Fedora, RHEL, Debian, Gentoo), Windows XP/7<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
 
@@ -468,8 +472,8 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Personal Projects<span class="nb">}</span>
 
 	<span class="c">%\begin{resaltsec}{Open Source Network Resource \&amp; Access Manager}{2011 - Present}{http://grantcohoe.com/projects/starrs}</span>
-	<span class="c">%	\ressubitem{Contributed main output script for the ISC DHCPD server}</span>
-	<span class="c">%	\ressubitem{Worked with PL/Perl, PostgreSQL}</span>
+	<span class="c">% \ressubitem{Contributed main output script for the ISC DHCPD server}</span>
+	<span class="c">% \ressubitem{Worked with PL/Perl, PostgreSQL}</span>
 	<span class="c">%\end{resaltsec}</span>
 
 	<span class="k">\begin</span><span class="nb">{</span>resaltsec<span class="nb">}{</span>Android Gatekeeper App<span class="nb">}{</span>2012 - 2014<span class="nb">}{</span>https://github.com/agargiulo/gatekeeper-android<span class="nb">}</span>
@@ -477,10 +481,10 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 		<span class="k">\ressubitem</span><span class="nb">{</span>Enables CSHers to unlock certain specially equipped doors with their Android devices<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>resaltsec<span class="nb">}</span>
 
-	<span class="k">\begin</span><span class="nb">{</span>resaltsec<span class="nb">}{</span>PXE Boot Server<span class="nb">}{</span>2010 - 2014<span class="nb">}{</span>https://github.com/ComputerScienceHouse/tftpboot<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Allows users to install various Operating Systems without burning discs<span class="nb">}</span>
-	<span class="k">\end</span><span class="nb">{</span>resaltsec<span class="nb">}</span>
+	<span class="c">%\begin{resaltsec}{PXE Boot Server}{2010 - 2014}{https://github.com/ComputerScienceHouse/tftpboot}</span>
+	<span class="c">%	\ressubitem{Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD}</span>
+	<span class="c">%	\ressubitem{Allows users to install various Operating Systems without burning discs}</span>
+	<span class="c">%\end{resaltsec}</span>
 
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
@@ -489,10 +493,14 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Experience<span class="nb">}</span>
 
-    <span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Facebook<span class="nb">}{</span>Menlo Park, CA<span class="k">\hfill</span> May 2014 -- August 2014<span class="nb">}{</span>Production Engineering Intern<span class="nb">}</span>
-        <span class="k">\ressubitem</span><span class="nb">{</span>Worked on Air Traffic Control, a system to shape traffic for testing applications in poor network conditions<span class="nb">}</span>
-        <span class="k">\ressubitem</span><span class="nb">{</span>Contributed to Facebook&#39;s <span class="k">\textbf</span><span class="nb">{</span>sparts<span class="nb">}</span>, an open source library to prototype services in python<span class="nb">}</span>
-    <span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Constant Contact<span class="nb">}{</span>Waltham, MA<span class="k">\hfill</span> October 2014 -- present<span class="nb">}{</span>Continuous Delivery CoOp<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Worked on internal tools to aid teams in continuously deploying their code<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Most time was spent writing Ruby, also contributed to <span class="k">\textbf</span><span class="nb">{</span>jenkins pipeline builder<span class="nb">}</span>, a tool to programmatically create and maintain Jenkins jobs<span class="nb">}</span>
+	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Facebook<span class="nb">}{</span>Menlo Park, CA<span class="k">\hfill</span> May 2014 -- August 2014<span class="nb">}{</span>Production Engineering Intern<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Worked on Augmented Traffic Control, a system to shape traffic for testing applications in poor network conditions<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Contributed to Facebook&#39;s <span class="k">\textbf</span><span class="nb">{</span>sparts<span class="nb">}</span>, an open source library to prototype services in python<span class="nb">}</span>
+	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
 	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Newstex, LLC<span class="nb">}{</span>Remote work<span class="k">\hfill</span> May 2013 -- April 2014<span class="nb">}{</span>Systems Engineer<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Maintained a fleet of services and systems comprising Newstex&#39;s content syndication service<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Patched parts of Newstex&#39;s production python code base<span class="nb">}</span>
@@ -502,8 +510,8 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 		<span class="k">\ressubitem</span><span class="nb">{</span>Configured routers and switches for the members&#39; networks<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
 	<span class="c">%\begin{ressubsec}{Rochester Institute of Technology IGM Department}{Rochester, NY \hfill October 2011 -- February 2012}{System Administrator (Center for Student Innovation)}</span>
-	<span class="c">%	\ressubitem{Responsible for the keeping the various technical items in the Center up to date}</span>
-	<span class="c">%	\ressubitem{Set up and maintained several Linux servers for FOSS@RIT}</span>
+	<span class="c">% \ressubitem{Responsible for the keeping the various technical items in the Center up to date}</span>
+	<span class="c">% \ressubitem{Set up and maintained several Linux servers for FOSS@RIT}</span>
 	<span class="c">%\end{ressubsec}</span>
 
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
@@ -521,7 +529,7 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 
 <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
-<span class="c">% vim: set spell tw=100 :</span>
+<span class="c">% vim: set spell tw=150 :</span>
 </pre></div>
 </td></tr></table></body>
 </html>
