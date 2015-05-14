@@ -8,7 +8,7 @@ stage: resume.pdf stage_upload
 
 all: resume.pdf upload
 
-upload:stage
+upload: stage
 	ssh -4 -oVisualHostKey=no $(USER)@$(WEB_HOST) 'cp -rv $(STAGE_PATH)* $(LIVE_PATH)'
 
 resume.tex.html: resume.tex
@@ -17,5 +17,9 @@ resume.tex.html: resume.tex
 resume.pdf: resume.tex
 	pdflatex resume.tex
 
-stage_upload:resume.pdf resume.tex.html
+stage_upload: resume.pdf resume.tex.html
 	scp -4 -oVisualHostKey=no $(FILES) $(USER)@$(WEB_HOST):$(STAGE_PATH)
+
+git-post-update-hook: stage
+	git add $(FILES)
+	git commit --ammend --no-edit
