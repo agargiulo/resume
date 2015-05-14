@@ -22,4 +22,4 @@ stage_upload: resume.pdf resume.tex.html
 
 git-post-update-hook: stage
 	git add $(FILES)
-	git commit --amend --no-edit
+	git diff --cached --exit-code || git commit --amend --no-edit
