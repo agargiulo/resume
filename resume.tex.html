@@ -303,7 +303,10 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 224
 225
 226
-227</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">% Anthony Gargiulo&#39;s Resume</span>
+227
+228
+229
+230</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">% Anthony Gargiulo&#39;s Resume</span>
 <span class="c">% Based on the template by </span>
 <span class="c">% Andrew McNabb</span>
 <span class="c">% Created: Fri Aug 12 11:11:56 EDT 2011</span>
@@ -454,8 +457,8 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
 
 	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Programming Languages:<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient in Ruby, Python, C/C++, Java, Perl<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with SQL, PHP, Bash/ZSH, MIPS, x86 asm, <span class="k">\LaTeX</span><span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient in Ruby, Perl, Python, C/C++, Java<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with SQL, PHP, Bash/ZSH, <span class="k">\LaTeX</span>, MIPS, x86 asm<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
 
 	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Tools and Software:<span class="nb">}</span>
@@ -493,6 +496,9 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Experience<span class="nb">}</span>
 
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>athenahealth, Inc<span class="nb">}{</span>Watertown, MA<span class="k">\hfill</span> June 2015 -- August 2015<span class="nb">}{</span>Software Development Intern on athenaCommunicator<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Helped design and implement the groundwork for porting internals of Communicator from an older system to a brand new architecture<span class="nb">}</span>
+	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
 	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Constant Contact<span class="nb">}{</span>Waltham, MA<span class="k">\hfill</span> October 2014 -- May 2015<span class="nb">}{</span>Continuous Delivery CoOp<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Worked on internal tools, mostly in Ruby, to aid teams in continuously deploying their code.<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Contributed to <span class="k">\textbf</span><span class="nb">{</span>jenkins pipeline builder<span class="nb">}</span>, an open source tool to programmatically create/maintain Jenkins jobs.<span class="nb">}</span>
@@ -505,10 +511,10 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 		<span class="k">\ressubitem</span><span class="nb">{</span>Maintained a fleet of services and systems comprising Newstex&#39;s content syndication service.<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Patched parts of Newstex&#39;s production python code base involved in parsing and processing various stories.<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
-	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Computer Science House<span class="nb">}{</span>Rochester, NY<span class="k">\hfill</span> September 2011 -- April 2014<span class="nb">}{</span>System Administrator<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Maintained services including mail, Kerberos, news, web, and shell access for the organization.<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Configured routers and switches for the members&#39; networks.<span class="nb">}</span>
-	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
+	<span class="c">%\begin{ressubsec}{Computer Science House}{Rochester, NY\hfill September 2011 -- April 2014}{System Administrator}</span>
+	<span class="c">%	\ressubitem{Maintained services including mail, Kerberos, news, web, and shell access for the organization.}</span>
+	<span class="c">%	\ressubitem{Configured routers and switches for the members&#39; networks.}</span>
+	<span class="c">%\end{ressubsec}</span>
 	<span class="c">%\begin{ressubsec}{Rochester Institute of Technology IGM Department}{Rochester, NY \hfill October 2011 -- February 2012}{System Administrator (Center for Student Innovation)}</span>
 	<span class="c">%	\ressubitem{Responsible for the keeping the various technical items in the Center up to date.}</span>
 	<span class="c">%	\ressubitem{Set up and maintained several Linux servers for FOSS@RIT.}</span>
@@ -529,7 +535,7 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 
 <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
-<span class="c">% vim: set spell tw=150 :</span>
+<span class="c">% vim: set spell tw=150 noet :</span>
 </pre></div>
 </td></tr></table></body>
 </html>
