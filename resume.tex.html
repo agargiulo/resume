@@ -4,7 +4,7 @@
 <html>
 <head>
   <title></title>
-  <meta http-equiv="content-type" content="text/html; charset=latin1">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <style type="text/css">
 td.linenos { background-color: #f0f0f0; padding-right: 10px; }
 span.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }
@@ -15,8 +15,10 @@ body .c { color: #888888 } /* Comment */
 body .err { color: #FF0000; background-color: #FFAAAA } /* Error */
 body .k { color: #008800; font-weight: bold } /* Keyword */
 body .o { color: #333333 } /* Operator */
+body .ch { color: #888888 } /* Comment.Hashbang */
 body .cm { color: #888888 } /* Comment.Multiline */
 body .cp { color: #557799 } /* Comment.Preproc */
+body .cpf { color: #888888 } /* Comment.PreprocFile */
 body .c1 { color: #888888 } /* Comment.Single */
 body .cs { color: #cc0000; font-weight: bold } /* Comment.Special */
 body .gd { color: #A00000 } /* Generic.Deleted */
@@ -51,6 +53,7 @@ body .nt { color: #007700 } /* Name.Tag */
 body .nv { color: #996633 } /* Name.Variable */
 body .ow { color: #000000; font-weight: bold } /* Operator.Word */
 body .w { color: #bbbbbb } /* Text.Whitespace */
+body .mb { color: #6600EE; font-weight: bold } /* Literal.Number.Bin */
 body .mf { color: #6600EE; font-weight: bold } /* Literal.Number.Float */
 body .mh { color: #005588; font-weight: bold } /* Literal.Number.Hex */
 body .mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
@@ -306,7 +309,11 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 227
 228
 229
-230</pre></div></td><td class="code"><div class="highlight"><pre><span class="c">% Anthony Gargiulo&#39;s Resume</span>
+230
+231
+232
+233
+234</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c">% Anthony Gargiulo&#39;s Resume</span>
 <span class="c">% Based on the template by </span>
 <span class="c">% Andrew McNabb</span>
 <span class="c">% Created: Fri Aug 12 11:11:56 EDT 2011</span>
@@ -432,11 +439,11 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
 
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
-<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Objective<span class="nb">}</span>
-
-	<span class="k">\ressubitem</span><span class="nb">{</span>Seeking full time employment in the field of computer science or system/network administration. Available Fall 2015<span class="nb">}</span>
-
-<span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
+<span class="c">%%%  \begin{ressection}{Objective}</span>
+<span class="c">%%%  </span>
+<span class="c">%%%  	\ressubitem{Seeking full time employment in the field of system/network administration or production engineering.}</span>
+<span class="c">%%%  </span>
+<span class="c">%%%  \end{ressection}</span>
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 
 
@@ -462,8 +469,8 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
 
 	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Tools and Software:<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient with Android platforms, Vim, Git <span class="k">\&amp;</span> Github, Apache, Subversion, Amazon EC2 <span class="k">\&amp;</span> CloudWatch<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with Vagrant, Jenkins/Travis CI, ISC-DHCPD, Cisco IOS, PostgreSQL, OpenLDAP, Puppet/Chef<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient with Vim, Git <span class="k">\&amp;</span> Github, Apache, Puppet/Foreman<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with Vagrant, Jenkins/Travis CI, ISC-DHCPD, Cisco IOS, PostgreSQL, OpenLDAP, Chef<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Operating Systems: Linux (Fedora/RHEL, Debian, Gentoo), Windows XP to present, OS X 10.9 to present<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
 
@@ -496,6 +503,10 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Experience<span class="nb">}</span>
 
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Datto, Inc.<span class="nb">}{</span>Norwalk, CT<span class="k">\hfill</span> November 2015 -- October 2016<span class="nb">}{</span>Systems/Production Engineer<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Worked to stand up, manage, and maintain systems for Datto&#39;s core services.<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Work to develop tools and systems to help the developers deploy their code to production systems.<span class="nb">}</span>
+	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
 	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>athenahealth, Inc<span class="nb">}{</span>Watertown, MA<span class="k">\hfill</span> June 2015 -- August 2015<span class="nb">}{</span>Software Development Intern on athenaCommunicator<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Helped design and implement the groundwork for porting internals of Communicator from an older system to a brand new architecture<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
@@ -507,10 +518,10 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 		<span class="k">\ressubitem</span><span class="nb">{</span>Worked on Augmented Traffic Control, a system to shape network traffic for testing apps in poor conditions.<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Contributed to Facebook&#39;s <span class="k">\textbf</span><span class="nb">{</span>sparts<span class="nb">}</span>, an open source library to prototype services in python.<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
-	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Newstex, LLC<span class="nb">}{</span>Remote work<span class="k">\hfill</span> May 2013 -- April 2014<span class="nb">}{</span>Systems Engineer<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Maintained a fleet of services and systems comprising Newstex&#39;s content syndication service.<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Patched parts of Newstex&#39;s production python code base involved in parsing and processing various stories.<span class="nb">}</span>
-	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
+	<span class="c">%\begin{ressubsec}{Newstex, LLC}{Remote work\hfill May 2013 -- April 2014}{Systems Engineer}</span>
+	<span class="c">%	\ressubitem{Maintained a fleet of services and systems comprising Newstex&#39;s content syndication service.}</span>
+	<span class="c">%	\ressubitem{Patched parts of Newstex&#39;s production python code base involved in parsing and processing various stories.}</span>
+	<span class="c">%\end{ressubsec}</span>
 	<span class="c">%\begin{ressubsec}{Computer Science House}{Rochester, NY\hfill September 2011 -- April 2014}{System Administrator}</span>
 	<span class="c">%	\ressubitem{Maintained services including mail, Kerberos, news, web, and shell access for the organization.}</span>
 	<span class="c">%	\ressubitem{Configured routers and switches for the members&#39; networks.}</span>
