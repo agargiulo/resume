@@ -58,8 +58,10 @@ body .mf { color: #6600EE; font-weight: bold } /* Literal.Number.Float */
 body .mh { color: #005588; font-weight: bold } /* Literal.Number.Hex */
 body .mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
 body .mo { color: #4400EE; font-weight: bold } /* Literal.Number.Oct */
+body .sa { background-color: #fff0f0 } /* Literal.String.Affix */
 body .sb { background-color: #fff0f0 } /* Literal.String.Backtick */
 body .sc { color: #0044DD } /* Literal.String.Char */
+body .dl { background-color: #fff0f0 } /* Literal.String.Delimiter */
 body .sd { color: #DD4422 } /* Literal.String.Doc */
 body .s2 { background-color: #fff0f0 } /* Literal.String.Double */
 body .se { color: #666666; font-weight: bold; background-color: #fff0f0 } /* Literal.String.Escape */
@@ -70,9 +72,11 @@ body .sr { color: #000000; background-color: #fff0ff } /* Literal.String.Regex *
 body .s1 { background-color: #fff0f0 } /* Literal.String.Single */
 body .ss { color: #AA6600 } /* Literal.String.Symbol */
 body .bp { color: #007020 } /* Name.Builtin.Pseudo */
+body .fm { color: #0066BB; font-weight: bold } /* Name.Function.Magic */
 body .vc { color: #336699 } /* Name.Variable.Class */
 body .vg { color: #dd7700; font-weight: bold } /* Name.Variable.Global */
 body .vi { color: #3333BB } /* Name.Variable.Instance */
+body .vm { color: #996633 } /* Name.Variable.Magic */
 body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
   </style>
@@ -313,7 +317,10 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 231
 232
 233
-234</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c">% Anthony Gargiulo&#39;s Resume</span>
+234
+235
+236
+237</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c">% Anthony Gargiulo&#39;s Resume</span>
 <span class="c">% Based on the template by </span>
 <span class="c">% Andrew McNabb</span>
 <span class="c">% Created: Fri Aug 12 11:11:56 EDT 2011</span>
@@ -333,8 +340,7 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
 <span class="c">% Name and contact information</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\name</span><span class="nb">}{</span>Anthony Gargiulo<span class="nb">}</span>
-<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\addr</span><span class="nb">}{</span>20 Kunen Ave, Bethpage, NY 11714<span class="nb">}</span>
-<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\phone</span><span class="nb">}{</span>(585) 201-8391<span class="nb">}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\addr</span><span class="nb">}{</span>San Francisco, CA<span class="nb">}</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\mobilePhone</span><span class="nb">}{</span>(516) 236-5102<span class="nb">}</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\email</span><span class="nb">}{</span>anthony@agargiulo.com<span class="nb">}</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\github</span><span class="nb">}{</span>https://github.com/agargiulo<span class="nb">}</span>
@@ -440,9 +446,9 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="c">%%%  \begin{ressection}{Objective}</span>
-<span class="c">%%%  </span>
+<span class="c">%%%</span>
 <span class="c">%%%  	\ressubitem{Seeking full time employment in the field of system/network administration or production engineering.}</span>
-<span class="c">%%%  </span>
+<span class="c">%%%</span>
 <span class="c">%%%  \end{ressection}</span>
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 
@@ -464,14 +470,14 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
 
 	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Programming Languages:<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient in Ruby, Perl, Python, C/C++, Java<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with SQL, PHP, Bash/ZSH, <span class="k">\LaTeX</span>, MIPS, x86 asm<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient in Ruby, Perl, Python, Java, Bash/ZSH<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with SQL, PHP, <span class="k">\LaTeX</span>, C/C++, MIPS, x86 asm<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
 
 	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Tools and Software:<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient with Vim, Git <span class="k">\&amp;</span> Github, Apache, Puppet/Foreman<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with Vagrant, Jenkins/Travis CI, ISC-DHCPD, Cisco IOS, PostgreSQL, OpenLDAP, Chef<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Operating Systems: Linux (Fedora/RHEL, Debian, Gentoo), Windows XP to present, OS X 10.9 to present<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient with Vim, Git, Apache, Puppet, Jenkins<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with Salt, Vagrant, Travis CI, Subversion, ISC-DHCPD, Cisco IOS, PostgreSQL, OpenLDAP<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Operating Systems: Linux (Fedora/RHEL, Debian, Gentoo), MacOS<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
 
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
@@ -503,6 +509,10 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Experience<span class="nb">}</span>
 
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>LinkedIn<span class="nb">}{</span>San Francisco, CA<span class="k">\hfill</span> October 2016 -- present<span class="nb">}{</span>Site Reliability Engineer<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Support multiple microservices that support slideshare.net<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Including monitoring/alerting, configuration management, build and deploy pipelines, and more<span class="nb">}</span>
+	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
 	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Datto, Inc.<span class="nb">}{</span>Norwalk, CT<span class="k">\hfill</span> November 2015 -- October 2016<span class="nb">}{</span>Systems/Production Engineer<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Worked to stand up, manage, and maintain systems for Datto&#39;s core services.<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Work to develop tools and systems to help the developers deploy their code to production systems.<span class="nb">}</span>
