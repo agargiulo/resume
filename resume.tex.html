@@ -309,19 +309,8 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 223
 224
 225
-226
-227
-228
-229
-230
-231
-232
-233
-234
-235
-236
-237</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c">% Anthony Gargiulo&#39;s Resume</span>
-<span class="c">% Based on the template by </span>
+226</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c">% Anthony Gargiulo&#39;s Resume</span>
+<span class="c">% Based on the template by</span>
 <span class="c">% Andrew McNabb</span>
 <span class="c">% Created: Fri Aug 12 11:11:56 EDT 2011</span>
 
@@ -418,7 +407,7 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="c">% This is a simple sublist</span>
 <span class="k">\newenvironment</span><span class="nb">{</span>reslist<span class="nb">}</span>[1]<span class="nb">{</span>
 	<span class="k">\resitem</span><span class="nb">{</span><span class="k">\textbf</span><span class="nb">{</span>#1<span class="nb">}}</span>
-	<span class="k">\vspace</span><span class="nb">{</span>-3pt<span class="nb">}</span>
+	<span class="k">\vspace</span><span class="nb">{</span>-6pt<span class="nb">}</span>
 	<span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
 <span class="nb">}{</span>
 	<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
@@ -445,63 +434,12 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
 
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
-<span class="c">%%%  \begin{ressection}{Objective}</span>
-<span class="c">%%%</span>
-<span class="c">%%%  	\ressubitem{Seeking full time employment in the field of system/network administration or production engineering.}</span>
-<span class="c">%%%</span>
-<span class="c">%%%  \end{ressection}</span>
-<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
-
-
-<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
-<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Education<span class="nb">}</span>
-
-	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Rochester Institute of Technology<span class="nb">}{</span>Rochester, NY<span class="nb">}{</span>Bachelor of Science in Applied Arts and Science<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Concentrating in Computer Science and Network <span class="k">\&amp;</span> Systems Administration<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Courses: Systems Programming I/II, Advanced Routing and Switching, OS I, Data Comm <span class="k">\&amp;</span> Networking<span class="nb">}</span>
-	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
-
-<span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
-<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
-
-
-<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Skills<span class="nb">}</span>
-
-
-	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Programming Languages:<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient in Ruby, Perl, Python, Java, Bash/ZSH<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with SQL, PHP, <span class="k">\LaTeX</span>, C/C++, MIPS, x86 asm<span class="nb">}</span>
-	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
-
-	<span class="k">\begin</span><span class="nb">{</span>reslist<span class="nb">}{</span>Tools and Software:<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Proficient with Vim, Git, Apache, Puppet, Jenkins<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with Salt, Vagrant, Travis CI, Subversion, ISC-DHCPD, Cisco IOS, PostgreSQL, OpenLDAP<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Operating Systems: Linux (Fedora/RHEL, Debian, Gentoo), MacOS<span class="nb">}</span>
-	<span class="k">\end</span><span class="nb">{</span>reslist<span class="nb">}</span>
-
-<span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
-<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
-
-
-<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
-<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Personal Projects<span class="nb">}</span>
-
-	<span class="c">%\begin{resaltsec}{Open Source Network Resource \&amp; Access Manager}{2011 - Present}{http://grantcohoe.com/projects/starrs}</span>
-	<span class="c">%	\ressubitem{Contributed main output script for the ISC DHCPD server}</span>
-	<span class="c">%	\ressubitem{Worked with PL/Perl, PostgreSQL}</span>
-	<span class="c">%\end{resaltsec}</span>
-
-	<span class="k">\begin</span><span class="nb">{</span>resaltsec<span class="nb">}{</span>Android Gatekeeper App<span class="nb">}{</span>2012 - 2014<span class="nb">}{</span>https://github.com/agargiulo/gatekeeper-android<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Developed Android Application to control proprietary internet-enabled door locks<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Enables users to unlock certain specially equipped doors with their Android devices<span class="nb">}</span>
-	<span class="k">\end</span><span class="nb">{</span>resaltsec<span class="nb">}</span>
-
-	<span class="c">%\begin{resaltsec}{PXE Boot Server}{2010 - 2014}{https://github.com/ComputerScienceHouse/tftpboot}</span>
-	<span class="c">%	\ressubitem{Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD}</span>
-	<span class="c">%	\ressubitem{Allows users to install various Operating Systems without burning discs}</span>
-	<span class="c">%\end{resaltsec}</span>
-
+	<span class="k">\ressubitem</span><span class="nb">{</span>Proficient in Ruby, Git, Python, Bash/ZSH, and Java<span class="nb">}</span>
+	<span class="k">\ressubitem</span><span class="nb">{</span>Familiar with C, Go, Perl, and <span class="k">\LaTeX</span><span class="nb">}</span>
+	<span class="k">\ressubitem</span><span class="nb">{</span>Configuration management tools (Puppet, Salt, Ansible)<span class="nb">}</span>
+	<span class="k">\ressubitem</span><span class="nb">{</span>Monitoring/alerting systems (ELK), Clustered systems (Kubernetes)<span class="nb">}</span>
+	<span class="k">\ressubitem</span><span class="nb">{</span>Command line tooling and build/deploy pipelines (Jenkins/Travis/GitLab)<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
 
@@ -510,8 +448,9 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 <span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Experience<span class="nb">}</span>
 
 	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>LinkedIn<span class="nb">}{</span>San Francisco, CA<span class="k">\hfill</span> October 2016 -- present<span class="nb">}{</span>Site Reliability Engineer<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Support multiple microservices that support slideshare.net<span class="nb">}</span>
-		<span class="k">\ressubitem</span><span class="nb">{</span>Including monitoring/alerting, configuration management, build and deploy pipelines, and more<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Support multiple microservices that back slideshare.net, user generated content, and sales navigator<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Worked on core pieces of new modular configuration management system<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Contributed to auto-remediation and availability systems, as well as internal tooling<span class="nb">}</span>
 	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
 	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Datto, Inc.<span class="nb">}{</span>Norwalk, CT<span class="k">\hfill</span> November 2015 -- October 2016<span class="nb">}{</span>Systems/Production Engineer<span class="nb">}</span>
 		<span class="k">\ressubitem</span><span class="nb">{</span>Worked to stand up, manage, and maintain systems for Datto&#39;s core services.<span class="nb">}</span>
@@ -546,14 +485,53 @@ body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
 
 
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
-<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Activities<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Personal Projects<span class="nb">}</span>
 
-	<span class="k">\resitem</span><span class="nb">{</span>Computer Science House @ Rochester Institute of Technology<span class="k">\hfill</span> 2010 -- May 2014<span class="nb">}</span>
-	<span class="k">\resitem</span><span class="nb">{</span>RIT Pep Band (alto sax and clarinet) <span class="k">\hfill</span> 2010 -- May 2014<span class="nb">}</span>
-	<span class="k">\resitem</span><span class="nb">{</span>FIRST Robotics Competition Volunteer <span class="k">\hfill</span> Spring 2012, 2013, 2014<span class="nb">}</span>
+	<span class="c">%\begin{resaltsec}{Open Source Network Resource \&amp; Access Manager}{2011 - Present}{http://grantcohoe.com/projects/starrs}</span>
+	<span class="c">%	\ressubitem{Contributed main output script for the ISC DHCPD server}</span>
+	<span class="c">%	\ressubitem{Worked with PL/Perl, PostgreSQL}</span>
+	<span class="c">%\end{resaltsec}</span>
+
+	<span class="k">\begin</span><span class="nb">{</span>resaltsec<span class="nb">}{</span>Tcelfer<span class="nb">}{</span>2018 - present<span class="nb">}{</span>https://github.com/agargiulo/tcelfer<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Ruby app that lets you assign a somewhat basic mood to each day.<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Generates monthly reports in pretty formats<span class="nb">}</span>
+	<span class="k">\end</span><span class="nb">{</span>resaltsec<span class="nb">}</span>
+
+	<span class="k">\begin</span><span class="nb">{</span>resaltsec<span class="nb">}{</span>Android Gatekeeper App<span class="nb">}{</span>2012 - 2014<span class="nb">}{</span>https://github.com/agargiulo/gatekeeper-android<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Developed Android Application to control proprietary internet-enabled door locks<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Enables users to unlock certain specially equipped doors with their Android devices<span class="nb">}</span>
+	<span class="k">\end</span><span class="nb">{</span>resaltsec<span class="nb">}</span>
+
+	<span class="c">%\begin{resaltsec}{PXE Boot Server}{2010 - 2014}{https://github.com/ComputerScienceHouse/tftpboot}</span>
+	<span class="c">%	\ressubitem{Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD}</span>
+	<span class="c">%	\ressubitem{Allows users to install various Operating Systems without burning discs}</span>
+	<span class="c">%\end{resaltsec}</span>
 
 <span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
 <span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
+
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="k">\begin</span><span class="nb">{</span>ressection<span class="nb">}{</span>Education<span class="nb">}</span>
+
+	<span class="k">\begin</span><span class="nb">{</span>ressubsec<span class="nb">}{</span>Rochester Institute of Technology<span class="nb">}{</span>Rochester, NY<span class="nb">}{</span>September 2010 -- May 2014<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Computer Science and Network <span class="k">\&amp;</span> Systems Administration<span class="nb">}</span>
+		<span class="k">\ressubitem</span><span class="nb">{</span>Courses: Systems Programming I/II, Advanced Routing and Switching, OS I, Data Comm <span class="k">\&amp;</span> Networking<span class="nb">}</span>
+	<span class="k">\end</span><span class="nb">{</span>ressubsec<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>ressection<span class="nb">}</span>
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
+
+<span class="c">% %%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="c">% \begin{ressection}{Activities}</span>
+<span class="c">% </span>
+<span class="c">% 	\resitem{Computer Science House @ Rochester Institute of Technology\hfill 2010 -- May 2014}</span>
+<span class="c">% 	\resitem{RIT Pep Band (alto sax and clarinet) \hfill 2010 -- May 2014}</span>
+<span class="c">% 	\resitem{FIRST Robotics Competition Volunteer \hfill Spring 2012, 2013, 2014}</span>
+<span class="c">% </span>
+<span class="c">% \end{ressection}</span>
+<span class="c">% %%%%%%%%%%%%%%%%%%%%%%%%</span>
 
 <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 <span class="c">% vim: set spell tw=150 noet :</span>

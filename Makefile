@@ -4,7 +4,7 @@ WEB_HOST = www.agargiulo.com
 STAGE_PATH = /var/www/html/resume/
 LIVE_PATH = /var/www/resume/
 PDFLATEX=/Applications/TeX//TeXShop.app/Contents/Resources/TeXShop/bin/pdflatexc
-PYGMENTIZE=/Users/agargiulo/.pyenv/shims/pygmentize
+PYGMENTIZE=/Users/agargiulo/bin/pygmentize
 
 stage: resume.pdf stage_upload
 

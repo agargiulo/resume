@@ -1,5 +1,5 @@
 % Anthony Gargiulo's Resume
-% Based on the template by 
+% Based on the template by
 % Andrew McNabb
 % Created: Fri Aug 12 11:11:56 EDT 2011
 
@@ -96,7 +96,7 @@
 % This is a simple sublist
 \newenvironment{reslist}[1]{
 	\resitem{\textbf{#1}}
-	\vspace{-3pt}
+	\vspace{-6pt}
 	\begin{itemize}
 }{
 	\end{itemize}
@@ -123,63 +123,12 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-%%%  \begin{ressection}{Objective}
-%%%
-%%%  	\ressubitem{Seeking full time employment in the field of system/network administration or production engineering.}
-%%%
-%%%  \end{ressection}
-%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{ressection}{Education}
-
-	\begin{ressubsec}{Rochester Institute of Technology}{Rochester, NY}{Bachelor of Science in Applied Arts and Science}
-		\ressubitem{Concentrating in Computer Science and Network \& Systems Administration}
-		\ressubitem{Courses: Systems Programming I/II, Advanced Routing and Switching, OS I, Data Comm \& Networking}
-	\end{ressubsec}
-
-\end{ressection}
-%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Skills}
-
-
-	\begin{reslist}{Programming Languages:}
-		\ressubitem{Proficient in Ruby, Perl, Python, Java, Bash/ZSH}
-		\ressubitem{Familiar with SQL, PHP, \LaTeX, C/C++, MIPS, x86 asm}
-	\end{reslist}
-
-	\begin{reslist}{Tools and Software:}
-		\ressubitem{Proficient with Vim, Git, Apache, Puppet, Jenkins}
-		\ressubitem{Familiar with Salt, Vagrant, Travis CI, Subversion, ISC-DHCPD, Cisco IOS, PostgreSQL, OpenLDAP}
-		\ressubitem{Operating Systems: Linux (Fedora/RHEL, Debian, Gentoo), MacOS}
-	\end{reslist}
-
-\end{ressection}
-%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{ressection}{Personal Projects}
-
-	%\begin{resaltsec}{Open Source Network Resource \& Access Manager}{2011 - Present}{http://grantcohoe.com/projects/starrs}
-	%	\ressubitem{Contributed main output script for the ISC DHCPD server}
-	%	\ressubitem{Worked with PL/Perl, PostgreSQL}
-	%\end{resaltsec}
-
-	\begin{resaltsec}{Android Gatekeeper App}{2012 - 2014}{https://github.com/agargiulo/gatekeeper-android}
-		\ressubitem{Developed Android Application to control proprietary internet-enabled door locks}
-		\ressubitem{Enables users to unlock certain specially equipped doors with their Android devices}
-	\end{resaltsec}
-
-	%\begin{resaltsec}{PXE Boot Server}{2010 - 2014}{https://github.com/ComputerScienceHouse/tftpboot}
-	%	\ressubitem{Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD}
-	%	\ressubitem{Allows users to install various Operating Systems without burning discs}
-	%\end{resaltsec}
-
+	\ressubitem{Proficient in Ruby, Git, Python, Bash/ZSH, and Java}
+	\ressubitem{Familiar with C, Go, Perl, and \LaTeX}
+	\ressubitem{Configuration management tools (Puppet, Salt, Ansible)}
+	\ressubitem{Monitoring/alerting systems (ELK), Clustered systems (Kubernetes)}
+	\ressubitem{Command line tooling and build/deploy pipelines (Jenkins/Travis/GitLab)}
 \end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -188,8 +137,9 @@
 \begin{ressection}{Experience}
 
 	\begin{ressubsec}{LinkedIn}{San Francisco, CA\hfill October 2016 -- present}{Site Reliability Engineer}
-		\ressubitem{Support multiple microservices that support slideshare.net}
-		\ressubitem{Including monitoring/alerting, configuration management, build and deploy pipelines, and more}
+		\ressubitem{Support multiple microservices that back slideshare.net, user generated content, and sales navigator}
+		\ressubitem{Worked on core pieces of new modular configuration management system}
+		\ressubitem{Contributed to auto-remediation and availability systems, as well as internal tooling}
 	\end{ressubsec}
 	\begin{ressubsec}{Datto, Inc.}{Norwalk, CT\hfill November 2015 -- October 2016}{Systems/Production Engineer}
 		\ressubitem{Worked to stand up, manage, and maintain systems for Datto's core services.}
@@ -224,14 +174,53 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
-\begin{ressection}{Activities}
+\begin{ressection}{Personal Projects}
 
-	\resitem{Computer Science House @ Rochester Institute of Technology\hfill 2010 -- May 2014}
-	\resitem{RIT Pep Band (alto sax and clarinet) \hfill 2010 -- May 2014}
-	\resitem{FIRST Robotics Competition Volunteer \hfill Spring 2012, 2013, 2014}
+	%\begin{resaltsec}{Open Source Network Resource \& Access Manager}{2011 - Present}{http://grantcohoe.com/projects/starrs}
+	%	\ressubitem{Contributed main output script for the ISC DHCPD server}
+	%	\ressubitem{Worked with PL/Perl, PostgreSQL}
+	%\end{resaltsec}
+
+	\begin{resaltsec}{Tcelfer}{2018 - present}{https://github.com/agargiulo/tcelfer}
+		\ressubitem{Ruby app that lets you assign a somewhat basic mood to each day.}
+		\ressubitem{Generates monthly reports in pretty formats}
+	\end{resaltsec}
+
+	\begin{resaltsec}{Android Gatekeeper App}{2012 - 2014}{https://github.com/agargiulo/gatekeeper-android}
+		\ressubitem{Developed Android Application to control proprietary internet-enabled door locks}
+		\ressubitem{Enables users to unlock certain specially equipped doors with their Android devices}
+	\end{resaltsec}
+
+	%\begin{resaltsec}{PXE Boot Server}{2010 - 2014}{https://github.com/ComputerScienceHouse/tftpboot}
+	%	\ressubitem{Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD}
+	%	\ressubitem{Allows users to install various Operating Systems without burning discs}
+	%\end{resaltsec}
 
 \end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Education}
+
+	\begin{ressubsec}{Rochester Institute of Technology}{Rochester, NY}{September 2010 -- May 2014}
+		\ressubitem{Computer Science and Network \& Systems Administration}
+		\ressubitem{Courses: Systems Programming I/II, Advanced Routing and Switching, OS I, Data Comm \& Networking}
+	\end{ressubsec}
+
+\end{ressection}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{ressection}{Activities}
+% 
+% 	\resitem{Computer Science House @ Rochester Institute of Technology\hfill 2010 -- May 2014}
+% 	\resitem{RIT Pep Band (alto sax and clarinet) \hfill 2010 -- May 2014}
+% 	\resitem{FIRST Robotics Competition Volunteer \hfill Spring 2012, 2013, 2014}
+% 
+% \end{ressection}
+% %%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
 % vim: set spell tw=150 noet :
