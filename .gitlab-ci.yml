@@ -1,0 +1,15 @@
+stages:
+  - build-img
+  - build
+  - deploy
+
+docker build:
+  stage: build-img
+  image:
+    name: img.doom.fm/internal/docker-build
+  script:
+    - sh /usr/local/bin/build-image
+  rules:
+    - changes:
+      - Dockerfile
+
