@@ -12,6 +12,7 @@ docker build:
   rules:
     - changes:
       - Dockerfile
+      when: always
     - if: $CI_MERGE_REQUEST_ID
       when: never
 
