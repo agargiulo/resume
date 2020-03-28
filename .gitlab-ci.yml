@@ -20,12 +20,13 @@ resume:
   script:
     - pdflatex resume.tex
     - pygmentize -f html -O full,style=colorful,linenos=1 -l latex -o resume.tex.html resume.tex
+    - cp resume.pdf "${CI_COMMIT_SHORT_SHA}-resume.pdf"
+    - cp resume.tex "${CI_COMMIT_SHORT_SHA}-resume.tex"
+    - cp resume.tex.html "${CI_COMMIT_SHORT_SHA}-resume.tex.html"
   artifacts:
     name: resume
     paths:
-      - resume.pdf
-      - resume.tex.html
-      - resume.tex
+      - "${CI_COMMIT_SHORT_SHA}-*"
 
 deploy3:
   stage: deploy
@@ -35,5 +36,6 @@ deploy3:
     GIT_STRATEGY: none
   script:
     - ls -la
+#    - aws s3 cp . "s3://${AGARG_resume_s3}/${CI_COMMIT_REF_NAME}/" --recursive --exclude "*" --include "${CI_COMMIT_SHORT_SHA}-*"
   dependencies:
     - resume
