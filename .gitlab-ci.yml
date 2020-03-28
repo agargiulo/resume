@@ -1,0 +1,43 @@
+stages:
+  - build-img
+  - build
+  - deploy
+
+docker build:
+  stage: build-img
+  image:
+    name: img.doom.fm/internal/docker-build
+  script:
+    - sh /usr/local/bin/build-image
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
+    - changes:
+      - Dockerfile
+      when: always
+
+resume:
+  stage: build
+  image:
+    name: "img.doom.fm/agargiulo/resume:${CI_COMMIT_REF_NAME}"
+  script:
+    - pdflatex resume.tex
+    - pygmentize -f html -O full,style=colorful,linenos=1 -l latex -o resume.tex.html resume.tex
+    - cp resume.pdf "${CI_COMMIT_SHORT_SHA}-resume.pdf"
+    - cp resume.tex "${CI_COMMIT_SHORT_SHA}-resume.tex"
+    - cp resume.tex.html "${CI_COMMIT_SHORT_SHA}-resume.tex.html"
+  artifacts:
+    name: "resume-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}"
+    paths:
+      - "${CI_COMMIT_SHORT_SHA}-*"
+
+deploy3:
+  stage: deploy
+  image:
+    name: "img.doom.fm/agargiulo/resume:${CI_COMMIT_REF_NAME}"
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - aws s3 cp . "s3://${AGARG_resume_s3}/${CI_COMMIT_REF_NAME}/" --recursive --exclude "*" --include "${CI_COMMIT_SHORT_SHA}-*"
+  dependencies:
+    - resume
