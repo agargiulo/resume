@@ -12,6 +12,8 @@ docker build:
   rules:
     - changes:
       - Dockerfile
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
 
 resume:
   stage: build
