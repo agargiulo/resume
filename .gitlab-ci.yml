@@ -26,3 +26,14 @@ resume:
       - resume.pdf
       - resume.tex.html
       - resume.tex
+
+deploy3:
+  stage: deploy
+  image:
+    name: "img.doom.fm/agargiulo/resume:${CI_COMMIT_REF_NAME}"
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - ls -la
+  dependencies:
+    - resume
