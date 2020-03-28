@@ -10,11 +10,11 @@ docker build:
   script:
     - sh /usr/local/bin/build-image
   rules:
+    - if: $CI_MERGE_REQUEST_ID
+      when: never
     - changes:
       - Dockerfile
       when: always
-    - if: $CI_MERGE_REQUEST_ID
-      when: never
 
 resume:
   stage: build
