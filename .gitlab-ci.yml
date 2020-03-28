@@ -13,3 +13,9 @@ docker build:
     - changes:
       - Dockerfile
 
+resume:
+  stage: build
+  image:
+    name: "img.doom.fm/agargiulo/resume:${CI_COMMIT_REF_NAME}"
+  script:
+    - which pdflatex
