@@ -1,6 +1,6 @@
 default:
   tags:
-    - shared-exec-docker
+    - agargiulo-ci-cd
 
 stages:
   - build-img
@@ -34,6 +34,7 @@ resume:
     name: "resume-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}"
     paths:
       - "${CI_COMMIT_SHORT_SHA}-*"
+    expire_in: 1 hour
 
 deploy3:
   stage: deploy

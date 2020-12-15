@@ -8,7 +8,7 @@
 \usepackage[T1]{fontenc}
 
 \pagestyle{empty}
-\geometry{letterpaper,tmargin=0.22in,bmargin=0.22in,lmargin=0.50in,rmargin=0.50in,headheight=0in,headsep=0in,footskip=.1in}
+\geometry{letterpaper,tmargin=0.15in,bmargin=0.15in,lmargin=0.40in,rmargin=0.40in,headheight=0in,headsep=0in,footskip=.05in}
 
 \setlength{\parindent}{0in}
 \setlength{\parskip}{0in}
@@ -35,10 +35,10 @@
 
 % A ressection is a main section (<H1>Section</H1>)
 \newenvironment{ressection}[1]{
-	\vspace{3pt}
+	\vspace{2pt}
 	{\fontfamily{bch}\selectfont\Large#1}
 	\begin{itemize}
-	\vspace{2pt}
+	\vspace{1pt}
 }{
 	\end{itemize}
 }
@@ -118,17 +118,16 @@
 
 \vspace{-1pt} {\normalsize\itshape \addr \hfill \mobilePhone \\ \linkedin \hfill \github \\ \email}
 
-\vspace{15 pt}
+\vspace{10 pt}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Skills}
-	\ressubitem{Proficient in Ruby, Git, Python, Bash/ZSH, and Java}
-	\ressubitem{Familiar with C, Go, Perl, and \LaTeX}
-	\ressubitem{Configuration management tools (Puppet, Salt, Ansible)}
-	\ressubitem{Monitoring/alerting systems (ELK), Clustered systems (Kubernetes)}
-	\ressubitem{Command line tooling and build/deploy pipelines (Jenkins/Travis/GitLab)}
+	\ressubitem{Proficient with Ruby, Git, Python, Bash/ZSH, Amazon Web Services}
+	\ressubitem{Familiar with C, Go, Perl, Java, and \LaTeX}
+	\ressubitem{Configuration management tools (Terraform|Puppet), Monitoring and Alerting systems}
+	\ressubitem{Command line tooling and build/deploy pipelines (GitLab|Jenkins|Travis)}
 \end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -136,6 +135,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Experience}
 
+	\begin{ressubsec}{LinkedIn}{San Francisco, CA\hfill July 2020 -- January 2021}{Site Reliability Engineer Contractor}
+		\ressubitem{Migration for slideshare.net from LinkedIn on-prem servers to AWS}
+		\ressubitem{Stood up infrastructure for Ruby on Rails app, Elasticsearch, and CI/CD pipelines}
+		\ressubitem{Configured monitoring and alerts with CloudWatch and PagerDuty}
+	\end{ressubsec}
 	\begin{ressubsec}{LinkedIn}{San Francisco, CA\hfill October 2016 -- February 2019}{Site Reliability Engineer}
 		\ressubitem{Support multiple microservices that back slideshare.net, user generated content, and sales navigator}
 		\ressubitem{Worked on core pieces of new modular configuration management system}
@@ -176,24 +180,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Personal Projects}
 
-	%\begin{resaltsec}{Open Source Network Resource \& Access Manager}{2011 - Present}{http://grantcohoe.com/projects/starrs}
-	%	\ressubitem{Contributed main output script for the ISC DHCPD server}
-	%	\ressubitem{Worked with PL/Perl, PostgreSQL}
-	%\end{resaltsec}
+	\begin{resaltsec}{Schism}{2020 - present}{https://github.com/schism-ssh}
+		\ressubitem{SSH Certificate Handling Intergalactic Serverless Module}
+		\ressubitem{Golang command line client and AWS Lambda function to generate and manage SSH Certificates}
+	\end{resaltsec}
 
-	\begin{resaltsec}{Tcelfer}{2018 - present}{https://github.com/tcelfer-me/tcelfer}
+	\begin{resaltsec}{Tcelfer}{2018 - present}{https://github.com/tcelfer-me}
 		\ressubitem{Ruby app that lets you assign a somewhat basic mood to each day.}
 		\ressubitem{Generates monthly reports in pretty formats}
 	\end{resaltsec}
 
-	\begin{resaltsec}{Android Gatekeeper App}{2012 - 2014}{https://github.com/agargiulo/gatekeeper-android}
-		\ressubitem{Developed Android Application to control proprietary internet-enabled door locks}
-		\ressubitem{Enables users to unlock certain specially equipped doors with their Android devices}
-	\end{resaltsec}
+	%\begin{resaltsec}{Android Gatekeeper App}{2012 - 2014}{https://github.com/agargiulo/gatekeeper-android}
+	%	\ressubitem{Developed Android Application to control proprietary internet-enabled door locks}
+	%	\ressubitem{Enables users to unlock certain specially equipped doors with their Android devices}
+	%\end{resaltsec}
 
 	%\begin{resaltsec}{PXE Boot Server}{2010 - 2014}{https://github.com/ComputerScienceHouse/tftpboot}
 	%	\ressubitem{Maintain a PXE Netboot server using TFTP, PXELINUX and ISC-DHCPD}
 	%	\ressubitem{Allows users to install various Operating Systems without burning discs}
+	%\end{resaltsec}
+
+	%\begin{resaltsec}{Open Source Network Resource \& Access Manager}{2011 - Present}{http://grantcohoe.com/projects/starrs}
+	%	\ressubitem{Contributed main output script for the ISC DHCPD server}
+	%	\ressubitem{Worked with PL/Perl, PostgreSQL}
 	%\end{resaltsec}
 
 \end{ressection}
