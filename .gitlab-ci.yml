@@ -7,7 +7,7 @@ stages:
   - build
   - deploy
 
-docker build:
+docker-build:
   stage: build-img
   image:
     name: img.doom.fm/build/kaniko:latest
@@ -22,6 +22,8 @@ docker build:
 
 resume:
   stage: build
+  needs:
+    - docker-build
   image:
     name: "$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:${CI_COMMIT_REF_NAME}"
   script:
