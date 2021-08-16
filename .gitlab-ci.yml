@@ -1,6 +1,6 @@
 default:
   tags:
-    - agargiulo-ci-cd
+    - agarg-public-projects
 
 stages:
   - build-img
@@ -10,9 +10,9 @@ stages:
 docker build:
   stage: build-img
   image:
-    name: img.doom.fm/internal/docker-build
+    name: img.doom.fm/build/kaniko:latest
   script:
-    - sh /usr/local/bin/build-image
+    - build-image
   rules:
     - if: $CI_MERGE_REQUEST_ID
       when: never
@@ -23,7 +23,7 @@ docker build:
 resume:
   stage: build
   image:
-    name: "img.doom.fm/agargiulo/resume:${CI_COMMIT_REF_NAME}"
+    name: "$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:${CI_COMMIT_REF_NAME}"
   script:
     - pdflatex resume.tex
     - pygmentize -f html -O full,style=colorful,linenos=1 -l latex -o resume.tex.html resume.tex
@@ -39,7 +39,7 @@ resume:
 deploy3:
   stage: deploy
   image:
-    name: "img.doom.fm/agargiulo/resume:${CI_COMMIT_REF_NAME}"
+    name: "$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:${CI_COMMIT_REF_NAME}"
   variables:
     GIT_STRATEGY: none
   script:
