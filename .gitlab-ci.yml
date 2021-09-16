@@ -10,7 +10,7 @@ stages:
 docker-build:
   stage: build-img
   image:
-    name: img.doom.fm/build/kaniko:latest
+    name: "$CI_REGISTRY/build/kaniko:latest"
   script:
     - build-image
   rules:
