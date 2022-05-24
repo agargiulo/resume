@@ -3,33 +3,13 @@ default:
     - agarg-public-projects
 
 stages:
-  - build-img
   - build
   - deploy
 
-docker-build:
-  stage: build-img
-  image:
-    name: "$CI_REGISTRY/build/kaniko:latest"
-  script:
-    - build-image
-  rules:
-    - if: $CI_MERGE_REQUEST_ID
-      when: never
-    - if: '$CI_DEFAULT_BRANCH == $CI_COMMIT_BRANCH'
-      when: always
-    - if: $CI_COMMIT_TAG
-      when: always
-    - changes:
-      - Dockerfile
-      when: always
-
 resume:
   stage: build
-  needs:
-    - docker-build
   image:
-    name: "$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:${CI_COMMIT_REF_NAME}"
+    name: "$CI_REGISTRY/build/latex:latest"
   script:
     - pdflatex resume.tex
     - pygmentize -f html -O full,style=colorful,linenos=1 -l latex -o resume.tex.html resume.tex
@@ -45,7 +25,8 @@ resume:
 deploy3:
   stage: deploy
   image:
-    name: "$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:${CI_COMMIT_REF_NAME}"
+    name: "amazon/aws-cli:latest"
+    entrypoint: [""]
   variables:
     GIT_STRATEGY: none
   script:
