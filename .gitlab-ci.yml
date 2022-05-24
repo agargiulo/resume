@@ -26,10 +26,10 @@ deploy3:
   stage: deploy
   image:
     name: "amazon/aws-cli:latest"
+    entrypoint: [""]
   variables:
     GIT_STRATEGY: none
   script:
-    - aws sts get-caller-identity
     - aws s3 cp . "s3://${AGARG_resume_s3}/${CI_COMMIT_REF_NAME}/" --recursive --exclude "*" --include "${CI_COMMIT_SHORT_SHA}-*"
   dependencies:
     - resume
